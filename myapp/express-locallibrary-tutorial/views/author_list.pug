@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+
+  if author_list.length
+    ul
+      each author in author_list
+        li
+          a(href=author.url) #{author.name}
+          if author.date_of_birth == null 
+              <em> nonexistent properties </em>.
+          if author.date_of_death == true  
+          |  (#{author.date_of_author})
+          if author.date_of_death == false
+          |  (#{author.due_back_formatted})
+
+  else
+    p There are no authors.
