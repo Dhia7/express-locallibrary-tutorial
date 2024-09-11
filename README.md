@@ -1,2 +1,2 @@
 # express-locallibrary-tutorial
-Local Library website written in Express (Node)
+Local Library website written with Express (Node)
